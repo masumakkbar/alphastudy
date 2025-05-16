@@ -349,19 +349,19 @@ function tp_get_postTitleArray($postType = 'post' ){
 /**
  * Remove WooCommerce breadcrumbs 
  */
-add_action( 'init', 'my_remove_breadcrumbs' );
-function my_remove_breadcrumbs() {
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-}
+// add_action( 'init', 'my_remove_breadcrumbs' );
+// function my_remove_breadcrumbs() {
+//     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+// }
 /**
  * Remove WooCommerce Actions 
  */
-add_action( 'init', 'woo_remove_actions' );
-function woo_remove_actions() {
-    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_notices', 10 );
-    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
-    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-}
+// add_action( 'init', 'woo_remove_actions' );
+// function woo_remove_actions() {
+//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_notices', 10 );
+//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+// }
 
 
 
@@ -537,58 +537,6 @@ function course_search_ajax() {
 
 add_action('wp_ajax_course_search_ajax', 'course_search_ajax');
 add_action('wp_ajax_nopriv_course_search_ajax', 'course_search_ajax');
-
-
- 
-
-// Favourite icon for course Ajax Action
-function handle_custom_toggle_wishlist() {
-    // Make sure the user is logged in
-    if (!is_user_logged_in()) {
-        wp_send_json_error(array('message' => 'You must be logged in to add to wishlist.'));
-        return;
-    }
-
-    // Get the course ID and action
-    $course_id = isset($_POST['course_id']) ? intval($_POST['course_id']) : 0;
-    $action = isset($_POST['wishlist_action']) ? sanitize_text_field($_POST['wishlist_action']) : '';
-
-    // If no valid course ID or action, return error
-    if (!$course_id || !in_array($action, ['add', 'remove'])) {
-        wp_send_json_error(array('message' => 'Invalid data.'));
-        return;
-    }
-
-    // User ID
-    $user_id = get_current_user_id();
-
-    // Get the user's wishlist (stored in user meta)
-    $wishlist = get_user_meta($user_id, '_user_wishlist', true);
-    if (!$wishlist) {
-        $wishlist = array();
-    }
-
-    // Toggle the wishlist
-    if ($action === 'add') {
-        if (!in_array($course_id, $wishlist)) {
-            $wishlist[] = $course_id; // Add to wishlist
-            update_user_meta($user_id, '_user_wishlist', $wishlist);
-            wp_send_json_success(); // Success response
-        } else {
-            wp_send_json_error(array('message' => 'Course already in wishlist.'));
-        }
-    } else if ($action === 'remove') {
-        if (($key = array_search($course_id, $wishlist)) !== false) {
-            unset($wishlist[$key]); // Remove from wishlist
-            update_user_meta($user_id, '_user_wishlist', $wishlist);
-            wp_send_json_success(); // Success response
-        } else {
-            wp_send_json_error(array('message' => 'Course not in wishlist.'));
-        }
-    }
-}
-add_action('wp_ajax_custom_toggle_wishlist', 'handle_custom_toggle_wishlist');
-
 
 // Output Code
 if (!function_exists('tp_elements_output_code')) {
