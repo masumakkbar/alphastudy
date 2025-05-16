@@ -128,6 +128,7 @@ class Themephi_Elementor_Swiper_Navigation_Widget extends \Elementor\Widget_Base
 					'logo_navigation' => esc_html__('Logo Showcase', 'tp-elements'),
 					'testimonial_navigation' => esc_html__('Testimonial', 'tp-elements'),					
 					'events_navigation' => esc_html__('Events', 'tp-elements'),					
+					'course_category_navigation' => esc_html__('Course Category', 'tp-elements'),					
 				],
 				'condition' => [
 					'slider_control_type' => ['navigation_only'],
@@ -265,6 +266,7 @@ class Themephi_Elementor_Swiper_Navigation_Widget extends \Elementor\Widget_Base
 					'blog_category_pagination' => esc_html__('Blog Category', 'tp-elements'),					
 					'testimonial_pagination' => esc_html__('Testimonial', 'tp-elements'),					
 					'events_pagination' => esc_html__('Events', 'tp-elements'),					
+					'course_category_pagination' => esc_html__('Course Category', 'tp-elements'),					
 				],
 				'condition' => [
 					'slider_control_type' => ['pagination_only'],
@@ -949,6 +951,11 @@ class Themephi_Elementor_Swiper_Navigation_Widget extends \Elementor\Widget_Base
 		$nav_next_class = 'tp-fullwidth-blog-slide-next';
 		$nav_prev_class = 'tp-fullwidth-blog-slide-prev';
 
+	} elseif( $settings['navigation_style'] == 'course_category_navigation' ) {
+
+		$nav_next_class = 'tp-course-category-slide-next';
+		$nav_prev_class = 'tp-course-category-slide-prev';
+
 	} else {
 
 		$nav_next_class = 'tp-blog-slide-next';
@@ -968,6 +975,8 @@ class Themephi_Elementor_Swiper_Navigation_Widget extends \Elementor\Widget_Base
 			$pag_class = 'tp-blog-category-pagination ';
 		} elseif( $settings[ 'pagination_style' ] == 'fullwidth_blog_pagination' ) {
 			$pag_class = 'tp-fullwidth-blog-pagination ';
+		} elseif( $settings[ 'pagination_style' ] == 'course_category_pagination' ) {
+			$pag_class = 'tp-course-category-pagination ';
 		} else {
 			$pag_class = 'tp-blog-pagination ';
 		}
