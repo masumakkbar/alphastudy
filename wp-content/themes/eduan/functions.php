@@ -349,19 +349,19 @@ function tp_get_postTitleArray($postType = 'post' ){
 /**
  * Remove WooCommerce breadcrumbs 
  */
-// add_action( 'init', 'my_remove_breadcrumbs' );
-// function my_remove_breadcrumbs() {
-//     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-// }
+add_action( 'init', 'my_remove_breadcrumbs' );
+function my_remove_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
 /**
  * Remove WooCommerce Actions 
  */
-// add_action( 'init', 'woo_remove_actions' );
-// function woo_remove_actions() {
-//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_notices', 10 );
-//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
-//     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-// }
+add_action( 'init', 'woo_remove_actions' );
+function woo_remove_actions() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_notices', 10 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+}
 
 
 
@@ -537,6 +537,7 @@ function course_search_ajax() {
 
 add_action('wp_ajax_course_search_ajax', 'course_search_ajax');
 add_action('wp_ajax_nopriv_course_search_ajax', 'course_search_ajax');
+
 
 // Output Code
 if (!function_exists('tp_elements_output_code')) {
