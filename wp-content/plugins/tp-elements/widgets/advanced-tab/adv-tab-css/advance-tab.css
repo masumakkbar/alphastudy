@@ -1,0 +1,152 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.tp-tab-advance-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.tp-tab-advance-wrapper .tab-pane.fade:not(.show) {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.tp-checkbox-item input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.tp-checkbox-input {
+  opacity: 0;
+  position: absolute;
+  background-color: transparent;
+}
+.tp-checkbox-box {
+  background-color: #f3f4f6;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.tp-checkbox-control {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: inherit;
+  border: 3px solid #22272f;
+  border-radius: 24px;
+}
+.tp-checkbox-control::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border-radius: 12px;
+}
+.tp-checkbox-label .subtitle {
+  color: #746bb3;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+}
+.tp-checkbox-label .title {
+  display: block;
+  color: #22272f;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.tp-checkbox-item-inner.active .tp-checkbox-control {
+  border-color: lightcoral;
+}
+.tp-checkbox-item-inner.active .tp-checkbox-control::after {
+  background-color: lightgreen;
+}
+
+.tp-nav-icon {
+  background-color: #f3f4f6;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tp-icon-position-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.tp-icon-position-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.tp-icon-position-bottom {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tp-icon-position-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tp-subtitle-position-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.tp-subtitle-position-bottom {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tab-pane.active {
+  animation: slide-down 2s ease-out;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=advance-tab.css.map */

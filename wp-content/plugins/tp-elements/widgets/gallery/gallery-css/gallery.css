@@ -1,0 +1,49 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.tp-gallerys .galley-img {
+  position: relative;
+  z-index: 1;
+}
+.tp-gallerys .galley-img::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear 0s;
+}
+.tp-gallerys .galley-img .image-popup.zoom-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear 0s;
+}
+.tp-gallerys .galley-img:hover .image-popup.zoom-icon {
+  opacity: 1;
+  visibility: visible;
+}
+.tp-gallerys .galley-img:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,168 @@
+:root {
+  --bodyFont: "Roboto", sans-serif;
+  --titleFont: "Roboto", sans-serif;
+  --primaryColor: #1268EB;
+  --secondaryColor: #0D56C4;
+  --bodyColor: #777777;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #F5F5F5;
+  --softbgColor: #F5F5F5;
+  --transition: 0.4s all ease;
+}
+
+.item--wrap {
+  display: flex;
+}
+.item--wrap .item--img {
+  flex-shrink: 0;
+  width: 300px;
+  height: 260px;
+}
+.item--wrap .item--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.single--item {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-quote-icon {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+}
+.testimonial-quote-icon i {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+.testimonial-quote-icon i::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+.testimonial-quote-icon svg {
+  display: block;
+}
+
+.content--box {
+  display: flex;
+}
+.content--box .banner-image {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.content--box .banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content--box .description {
+  flex-shrink: 0;
+}
+
+.rating-heading {
+  display: flex;
+  align-items: center;
+}
+.rating-heading span {
+  display: block;
+}
+
+.tp-el-star {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  text-align: center;
+}
+.tp-el-star i {
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tp-el-star i::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tp-el-star svg {
+  display: block;
+}
+
+.tp-testimonial-direction-vertical .content--box {
+  flex-direction: column;
+}
+.tp-testimonial-direction-horizontal .content--box {
+  flex-direction: row;
+}
+
+.tp-item-wrap-direction-vertical .item--wrap {
+  flex-direction: column;
+}
+.tp-item-wrap-direction-horizontal .item--wrap {
+  flex-direction: row;
+}
+
+.tp-item-wrap-img-cover .item--img img {
+  object-fit: cover;
+}
+.tp-item-wrap-img-fill .item--img img {
+  object-fit: fill;
+}
+.tp-item-wrap-img-contain .item--img img {
+  object-fit: contain;
+}
+
+.tp-item-wrap-img-position-top .item--img img {
+  object-position: center top;
+}
+.tp-item-wrap-img-position-center .item--img img {
+  object-position: center center;
+}
+.tp-item-wrap-img-position-bottom .item--img img {
+  object-position: center bottom;
+}
+
+.tp-testimonial-style4 .single--item::before {
+  position: absolute;
+  left: 30px;
+  bottom: -28px;
+  content: "";
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background-color: #fff;
+  width: 28px;
+  height: 28px;
+}
+
+.tp-testimonial-style5 .item--img {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.tp-testimonial-style5 .tp-el-star span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.review-body .desc p {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=testimonial.css.map */

@@ -1,0 +1,189 @@
+:root {
+  --bodyFont: "Rubik", sans-serif;
+  --titleFont: "URW Imperial W01 Regular";
+  --tekoFont: "Teko", sans-serif;
+  --OpticianSansFont: "OpticianSans";
+  --clashDisplayFont: "ClashDisplay";
+  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
+  --clashDisplayLightFont: "ClashDisplay-Light";
+  --clashDisplayRegularFont: "ClashDisplay-Regular";
+  --clashDisplayMediumFont: "ClashDisplay-Medium";
+  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --primaryColor: #00C89A;
+  --secondaryColor: #B66A25;
+  --bodyColor: #515151;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #FFFFFF;
+  --softbgColor: #f6f6f6;
+  --transition: 0.4s all ease;
+}
+
+div.tp-course-item {
+  display: flex;
+  flex-direction: column;
+}
+div.tp-course-image {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+div.tp-course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.tp-course-upper_meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.tp-course-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.tp-course-author {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+div.tp-course-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+div.tp-course-content-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.tp-course-btn a {
+  display: flex;
+  align-items: center;
+}
+
+.tp-course-item .tp-course-content .tutor-avatar {
+  display: flex;
+}
+.tp-course-item .tp-common-meta {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.tp-course-item .save-bookmark-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tp-course-item .tp-course-ratings-stars {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+}
+.icon i {
+  width: 1em;
+  height: 1em;
+  display: block;
+  line-height: 1;
+}
+.icon i::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+.icon svg {
+  display: block;
+  line-height: 1;
+  width: 15px;
+}
+
+.tp-course-hover-content {
+  padding: 25px 25px 25px;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  top: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 9;
+  visibility: hidden;
+  transition: 0.3s linear;
+  transform: scale(0.6);
+  min-height: 100%;
+}
+.tp-course-hover-content-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.tp-course-hover-content-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.tp-course-hover-cart-btn {
+  width: calc(100% - 40px);
+}
+.tp-course-hover-content::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-color: #fff;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  width: 20px;
+  height: 24px;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+
+.tp-course-hover-content .tp-meta-bookmark {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(30, 30, 30, 0.14);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 15px;
+  color: #1E1E1E;
+  background-color: rgba(10, 10, 10, 0.08);
+}
+.tp-course-hover-content .tp-meta-bookmark i {
+  font-weight: 300;
+}
+.tp-course-hover-content .tp-meta-bookmark:hover {
+  background-color: #1268EB;
+  border-color: transparent;
+  color: #fff;
+}
+
+.tp-course-item {
+  position: relative;
+  z-index: auto;
+}
+.tp-course-item:hover .tp-course-hover-content {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+  transform: scale(1);
+}
+.tp-course-item:hover .tp-course-hover-content::before {
+  left: -15px;
+}
+
+/*# sourceMappingURL=courses.css.map */

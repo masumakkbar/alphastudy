@@ -1,0 +1,183 @@
+@import '../../../../scss/base';
+
+div.tp-course {
+    &-item {
+        display: flex;
+        flex-direction: column;
+    }
+    &-image {
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-upper_meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-author {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    &-content {
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &-btn {
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.tp-course-item {
+    .tp-course-content {
+        .tutor-avatar {
+            display: flex;
+        }
+    }
+    .tp-common-meta {
+        display: flex;
+        align-items: center;
+        width: max-content;
+    }
+    .save-bookmark-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tp-course-ratings-stars {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icon {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    i {
+        width: 1em;
+        height: 1em;
+        display: block;
+        line-height: 1;
+        &::before {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    svg {
+        display: block;
+        line-height: 1;
+        width: 15px;
+    }
+}
+
+// new 
+
+.tp-course {
+    &-hover {
+        &-content {
+            padding: 25px 25px 25px;
+            position: absolute;
+            left: 0;
+            top: -100%;
+            top: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            opacity: 0;
+            z-index: 9;
+            visibility: hidden;
+            transition: .3s linear;
+            transform: scale(.6);
+            min-height: 100%;
+            &-top {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-bottom: 20px;
+            }
+            &-btn {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+            }
+        }
+    }
+  }
+.tp-course {
+    &-hover {
+        &-cart-btn {
+            width: calc(100% - 40px);
+        }
+        &-content::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            background-color: #fff;
+            clip-path: polygon(0 50%, 100% 100%, 100% 0);
+            width: 20px;
+            height: 24px;
+            z-index: -1;
+            transition: .3s linear;
+        }
+        
+    }
+}
+.tp-course-hover-content .tp-meta-bookmark {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid rgba(30, 30, 30, 0.14);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    font-size: 15px;
+    color: #1E1E1E;
+    background-color: rgba(10, 10, 10, 0.08);
+    i {
+    font-weight: 300;
+    }
+    &:hover {
+        background-color: #1268EB;
+        border-color: transparent;
+        color: #fff;
+    }
+}
+.tp-course-item {
+    position: relative;
+    z-index: auto;
+    &:hover {
+        .tp-course-hover-content {
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+            transform: scale(1);
+            &::before {
+                left: -15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+:root {
+  --bodyFont: "Rubik", sans-serif;
+  --titleFont: "URW Imperial W01 Regular";
+  --tekoFont: "Teko", sans-serif;
+  --OpticianSansFont: "OpticianSans";
+  --clashDisplayFont: "ClashDisplay";
+  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
+  --clashDisplayLightFont: "ClashDisplay-Light";
+  --clashDisplayRegularFont: "ClashDisplay-Regular";
+  --clashDisplayMediumFont: "ClashDisplay-Medium";
+  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --primaryColor: #00C89A;
+  --secondaryColor: #B66A25;
+  --bodyColor: #515151;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #FFFFFF;
+  --softbgColor: #f6f6f6;
+  --transition: 0.4s all ease;
+}
+
+.tp-features-list {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+.tp-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.tp-features-list li .tp-features-icon {
+  display: inline-flex;
+  line-height: 1;
+  text-align: center;
+}
+.tp-features-list li .tp-features-icon i {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+.tp-features-list li .tp-features-icon i::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tp-features-list li .tp-features-icon svg {
+  display: block;
+}
+.tp-features-list li .tp-features-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  display: block;
+}
+.tp-features-list li .tp-features-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+}
+
+.tp-feature_list-position-left .tp-features-list li {
+  display: flex;
+  flex-direction: row;
+}
+
+.tp-feature_list-position-top .tp-features-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.tp-feature_list-position-right .tp-features-list li {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tp-feature_list-position-bottom .tp-features-list li {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*# sourceMappingURL=feature-list.css.map */

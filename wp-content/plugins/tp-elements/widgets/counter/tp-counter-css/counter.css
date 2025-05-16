@@ -1,0 +1,45 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+/** Counter up CSS ----------------------
+----------------------------------------*/
+.tp-horizontal-icon-position-start .tps-counter-list {
+  display: flex;
+  flex-direction: row;
+}
+.tp-horizontal-icon-position-start .tps-counter-list .tp-count-text {
+  flex-grow: 1;
+}
+
+.tp-horizontal-icon-position-end .tps-counter-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.tp-horizontal-icon-position-end .tps-counter-list .tp-count-text {
+  flex-grow: 1;
+}
+
+.tp-vertical-icon-position-top .tps-counter-list {
+  align-items: start;
+}
+
+.tp-vertical-icon-position-middle .tps-counter-list {
+  align-items: center;
+}
+
+.tp-vertical-icon-position-bottom .tps-counter-list {
+  align-items: end;
+}
+
+/*# sourceMappingURL=counter.css.map */

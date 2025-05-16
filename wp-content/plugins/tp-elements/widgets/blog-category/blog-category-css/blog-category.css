@@ -1,0 +1,105 @@
+:root {
+  --bodyFont: "Rubik", sans-serif;
+  --titleFont: "URW Imperial W01 Regular";
+  --tekoFont: "Teko", sans-serif;
+  --OpticianSansFont: "OpticianSans";
+  --clashDisplayFont: "ClashDisplay";
+  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
+  --clashDisplayLightFont: "ClashDisplay-Light";
+  --clashDisplayRegularFont: "ClashDisplay-Regular";
+  --clashDisplayMediumFont: "ClashDisplay-Medium";
+  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --primaryColor: #00C89A;
+  --secondaryColor: #B66A25;
+  --bodyColor: #515151;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #FFFFFF;
+  --softbgColor: #f6f6f6;
+  --transition: 0.4s all ease;
+}
+
+/** Blog Style CSS --------------
+-----------------------------------*/
+/* sTART FOR mASUM cSS */
+.title.dd a {
+  background-size: 201% 2px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--titleColor)), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, var(--titleColor) 50%, transparent 50%);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.title.dd a:hover {
+  background-position: 0% 100%;
+}
+
+.blog-img-position-left {
+  display: flex;
+}
+.blog-img-position-left .image-part a {
+  display: block;
+  height: 100%;
+}
+.blog-img-position-left .image-part a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-img-position-left .blog-content {
+  flex: 1;
+}
+
+.zoomin_effect .image-part {
+  overflow: hidden;
+}
+.zoomin_effect .image-part img {
+  transition: all 0.5s linear 0s;
+}
+.zoomin_effect .blog-item:hover .image-part img {
+  transform: scale(1.1);
+}
+
+.blog-category-item {
+  position: relative;
+}
+.blog-category-item .blog-category-image {
+  position: relative;
+}
+.blog-category-item .blog-category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.tp-blog-position-absolute .blog-category-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.tp-blog-overlay-show .blog-category-image::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(30, 30, 30, 0.5);
+}
+
+.image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=blog-category.css.map */

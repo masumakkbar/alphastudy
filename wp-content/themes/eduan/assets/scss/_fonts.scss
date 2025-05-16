@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../font/ClashDisplay-Regular.woff2') format('woff2'),
+         url('../font/ClashDisplay-Regular.woff') format('woff'),
+         url('../font/ClashDisplay-Regular.ttf') format('truetype');
+         
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay-Extralight';
+    src: url('../font/ClashDisplay-Extralight.woff2') format('woff2'),
+         url('../font/ClashDisplay-Extralight.woff') format('woff'),
+         url('../font/ClashDisplay-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay-Light';
+    src: url('../font/ClashDisplay-Light.woff2') format('woff2'),
+         url('../font/ClashDisplay-Light.woff') format('woff'),
+         url('../font/ClashDisplay-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('../font/ClashDisplay-Regular.woff2') format('woff2'),
+         url('../font/ClashDisplay-Regular.woff') format('woff'),
+         url('../font/ClashDisplay-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url('../font/ClashDisplay-Medium.woff2') format('woff2'),
+         url('../font/ClashDisplay-Medium.woff') format('woff'),
+         url('../font/ClashDisplay-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay-Semibold';
+    src: url('../font/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('../font/ClashDisplay-Semibold.woff') format('woff'),
+         url('../font/ClashDisplay-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashDisplay-Bold';
+    src: url('../font/ClashDisplay-Bold.woff2') format('woff2'),
+         url('../font/ClashDisplay-Bold.woff') format('woff'),
+         url('../font/ClashDisplay-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpticianSans';
+    src: url('../font/Optiker-K.woff2') format('woff2'), /* Modern Browsers */
+         url('../font/Optiker-K.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+  
+  @font-face{
+    font-family: "URW Imperial W01 Regular";
+    src: url("../font/41ef03052040400ec0acd500990fdc97.eot");
+    src: url("../font/41ef03052040400ec0acd500990fdc97.woff")format("woff"),
+        url("../font/41ef03052040400ec0acd500990fdc97.woff2")format("woff2"),
+        url("../font/41ef03052040400ec0acd500990fdc97.ttf")format("truetype");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+  }

@@ -1,0 +1,23 @@
+$xxl: '(max-width: 1366px)';
+$xl: '(max-width: 1200px)';
+$lg: '(max-width: 1024px)';
+$md: '(max-width: 880px)';
+$sm: '(max-width: 767px)';
+$xs: '(max-width: 575px)';
+$xxs: '(max-width: 480px)';
+
+
+:root { 
+    --bodyFont: "Roboto", sans-serif;
+    --titleFont: "Roboto", sans-serif;
+    --primaryColor: #1268EB;
+    --secondaryColor: #0D56C4;
+    --bodyColor: #777777;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --titleColor: #1E1E1E;
+    --borderColor: #f2f2f2;
+    --inputbgColor: #F5F5F5;
+    --softbgColor: #F5F5F5;
+    --transition: 0.4s all ease;
+}

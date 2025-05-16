@@ -1,0 +1,19 @@
+@import '../../../scss/base';
+/** video css --------------------------
+--------------------------------------*/
+.tp-icon-btn i, .tp-icon-btn svg {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+.tp-icon-btn {
+    display: inline-flex;
+    line-height: 1;
+    text-align: center;
+    font-size: 20px;
+    i {
+        &::before {
+            margin: 0;
+        }
+    }
+}

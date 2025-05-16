@@ -1,0 +1,47 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.tp-mailchimp .mc4wp-form-fields {
+  display: flex;
+  align-items: baseline;
+}
+.tp-mailchimp .mc4wp-form-fields p {
+  margin: 0;
+}
+.tp-mailchimp .mailchimp--submit {
+  position: relative;
+}
+.tp-mailchimp .mailchimp--submit:after {
+  position: absolute;
+  content: "\e80f";
+  left: 107px;
+  top: 6px;
+  color: #fff;
+  font-family: "tp-icons";
+}
+
+.tp-mailchimp.yes {
+  position: relative;
+}
+.tp-mailchimp.yes input[type=submit] {
+  font-size: 0;
+}
+.tp-mailchimp.yes .fa-location-arrow {
+  position: absolute;
+  right: 17px;
+  bottom: 16px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=mailchimp.css.map */

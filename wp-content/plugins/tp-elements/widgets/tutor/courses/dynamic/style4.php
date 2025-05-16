@@ -1,0 +1,108 @@
+<div class="grid-item col-xxl-<?php echo esc_attr( $settings['dynamic_col_xxl'] );?> col-xl-<?php echo esc_attr( $settings['dynamic_col_xl'] );?> col-lg-<?php echo esc_attr( $settings['dynamic_col_lg'] );?> col-md-<?php echo esc_attr( $settings['dynamic_col_md'] );?> col-sm-<?php echo esc_attr( $settings['dynamic_col_sm'] );?> col-<?php echo esc_attr( $settings['dynamic_col_xs'] );?> <?php echo esc_attr($termsString);?>">
+    <div class="tp-course-item">
+        <?php if($settings['course_image'] == 'yes') :?>
+        <div class="tp-course-image <?php echo $settings['image_gray'];?>">
+            <a href="<?php echo esc_url( get_the_permalink() ); ?>"><img src="<?php echo esc_url($image_url); ?>" alt="<?php the_title(); ?>"></a>
+        </div>   
+        <?php endif; ?>     
+        <div class="tp-course-content">  
+            <div class="tp-course-content-top">
+                <div class="tp-course-upper_meta">
+                    <?php if(($settings['course_cat_show_hide'] == 'yes') && !empty($categories ) ){ ?>
+                    <?php 
+                    if ($categories) {
+                        foreach ($categories as $category) {
+                            $cat_link = get_term_link($category->term_id);
+                            echo '<a class="tp-meta-category" href=" '. $cat_link .' " > '. $category->name .' </a>';
+                        }
+                    }
+                    ?>
+                    <?php } ?>
+
+                    <?php if(($settings['course_rating_show_hide'] == 'yes') ){ ?>
+                    <div class="tp-meta-rating tp-common-meta">
+                        <div class="tp-course-ratings-stars">
+                            <?php
+                                $course_rating = tutor_utils()->get_course_rating();
+                                tutor_utils()->star_rating_generator_course($course_rating->rating_avg);
+                            ?>
+                        </div>
+
+                        <?php if ($course_rating->rating_avg > 0) : ?>
+                            <span class="tp-course-ratings-average"><?php echo apply_filters('tutor_course_rating_average', $course_rating->rating_avg); ?></span>
+                            <span class="tp-course-ratings-count">(<?php echo $course_rating->rating_count > 0 ? $course_rating->rating_count : 0; ?>)</span>
+                        <?php endif; ?>
+                    </div>
+                <?php } ?>
+                    
+                </div>
+                <?php if(!empty($lesson_count ) && !empty($course_students ) && !empty($course_duration )){ ?>
+                <div class="tp-course-meta">
+                    <?php if(($settings['course_lesson_show_hide'] == 'yes') && !empty($lesson_count ) ){ ?>
+                    <div class="tp-meta-lesson tp-common-meta">
+                        <?php if(($settings['meta_lesson_switch'] == 'yes') ){ ?>
+                            <span class="icon">
+                            <?php \Elementor\Icons_Manager::render_icon( $settings['lesson_icon'], [ 'aria-hidden' => 'true' ] ); ?>
+                            </span>
+                        <?php } ?>
+                        <span class=""><?php echo esc_html( $lesson_count ); ?> <?php esc_html_e( ' Lessons', 'tutor-lms-elementor-addons' ); ?></span>
+                    </div>
+                    <?php } ?>
+
+                    <?php if(($settings['course_student_show_hide'] == 'yes') && !empty($course_students ) ){ ?>
+                    <div class="tp-meta-student tp-common-meta">
+                        <?php if(($settings['meta_student_switch'] == 'yes') ){ ?>
+                            <span class="icon">
+                            <?php \Elementor\Icons_Manager::render_icon( $settings['student_icon'], [ 'aria-hidden' => 'true' ] ); ?>
+                            </span>
+                        <?php } ?>
+                        <span class=""><?php echo esc_html( $course_students ); ?><?php esc_html_e( ' Students', 'tutor-lms-elementor-addons' ); ?></span>
+                    </div>
+                    <?php } ?>
+
+                    <?php if(($settings['course_duration_show_hide'] == 'yes') && !empty($course_duration ) ){ ?>
+                    <div class="tp-meta-duration tp-common-meta">
+                        <?php if(($settings['meta_duration_switch'] == 'yes') ){ ?>
+                            <span class="icon">
+                            <?php \Elementor\Icons_Manager::render_icon( $settings['duration_icon'], [ 'aria-hidden' => 'true' ] ); ?>
+                            </span>
+                        <?php } ?>
+                        <span class=""><?php echo tutor_utils()->clean_html_content( $course_duration ); ?></span>
+                    </div>
+                    <?php } ?>
+                </div>
+                <?php } ?>
+                <h4 class="tp-course-title"><a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php the_title(); ?></a></h4>
+
+                <?php if(($settings['content_show_hide'] == 'yes') ){ ?>
+                    <p class="tp-course-text"><?php echo wp_trim_words( $course_description, $limit, '...' ); ?></p>
+                <?php } ?>
+
+                <?php if(($settings['course_price_show_hide'] == 'yes') ){ ?>
+                    <?php if ( null != $price ) : ?>
+                        <div class="tp-course-price tp-meta-price">
+                            <?php echo tutor_kses_html( $price ); ?>
+                        </div>
+                    <?php else : ?>
+                        <div class="tp-course-price-free tp-meta-price">
+                            <?php echo esc_html_x( 'Free', 'course price', 'tutor-lms-elementor-addons' ); ?>
+                        </div>
+                    <?php endif; ?>
+                <?php } ?>
+                
+                <?php if($settings['button_show_hide'] == 'yes') { ?>
+                <div class="tp-course-btn">
+                    <a class="readon-arrow" href="<?php the_permalink(); ?>">
+                        <?php echo esc_html($settings['btn_text']);?>
+                        <?php if(($settings['btn_switch'] == 'yes') ){ ?>
+                            <span class="icon">
+                            <?php \Elementor\Icons_Manager::render_icon( $settings['btn_icon'], [ 'aria-hidden' => 'true' ] ); ?>
+                            </span>
+                        <?php } ?>
+                    </a>
+                </div>
+                <?php } ?>
+            </div> 
+        </div>
+    </div>
+</div>

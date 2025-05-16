@@ -1,0 +1,23 @@
+@import '../../../scss/base';
+
+.hfe-search-form__container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.hfe-search-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.tp-input-box-flex .hfe-search-form__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tp-input-box-block .hfe-search-form__container {
+    display: block;
+}

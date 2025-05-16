@@ -1,0 +1,117 @@
+@import '../../../scss/base';
+.tp-skill-bar {
+    .skillbar {
+        background: #eeeeee;
+        display: inline-block;
+        height: 6px;
+        position: relative;
+        width: 100%;
+        display: block;
+
+        .skillbar-bar {
+            background: var(--primaryColor);
+            height: 6px;
+            width: 0;
+            margin-bottom: 0;
+        }
+
+        .skillbar-title,
+        .skill-bar-percent {
+            // position: absolute;
+        }
+
+        .skillbar-title {
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+
+        .skill-bar-percent {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--titleColor);
+        }
+    }
+
+    .tp-skillbar-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 20px;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+    }
+
+    &.animation,
+    &.striped {
+        .skillbar .skillbar-bar {
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+            background-size: 1rem 1rem;
+        }
+    }
+
+    &.animation {
+        .skillbar .skillbar-bar {
+            -webkit-animation: rs-progress-pie-stripes 1s linear infinite;
+            animation: rs-progress-pie-stripes 1s linear infinite;
+
+        }
+    }
+
+    &.style1 {
+        padding-top: 25px;
+        .skillbar {
+            .skillbar-title { 
+                // top: -40px;
+            }
+
+            .skill-bar-percent {
+                // right: 0;
+                // top: -40px;
+            }
+        }
+    }
+
+    &.style2 {
+        .skillbar {
+            .skillbar-title {
+                left: 0;
+                padding: 2px 20px 0;
+                top: 0;
+                width: auto;
+                background: #83b614;
+            }
+
+            .skill-bar-percent {
+                right: 10px;
+                top: 0;
+            }
+        }
+    }
+}
+
+.tp-progressbar-position-left .tp-skillbar-head {
+    display: flex;
+    flex-direction: row;
+}
+.tp-progressbar-position-right .tp-skillbar-head {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tp-progress-item-position-start .tp-skillbar-head {
+    justify-content: flex-start;
+}
+.tp-progress-item-position-center .tp-skillbar-head {
+    justify-content: center;
+}
+.tp-progress-item-position-end .tp-skillbar-head {
+    justify-content: flex-end;
+}
+.tp-progress-item-position-stretch .tp-skillbar-head {
+    justify-content: space-between;
+}
+

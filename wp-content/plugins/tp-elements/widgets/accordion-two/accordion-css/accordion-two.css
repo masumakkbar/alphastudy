@@ -1,0 +1,160 @@
+:root {
+  --bodyFont: "Roboto", sans-serif;
+  --titleFont: "Roboto", sans-serif;
+  --primaryColor: #1268EB;
+  --secondaryColor: #0D56C4;
+  --bodyColor: #777777;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #F5F5F5;
+  --softbgColor: #F5F5F5;
+  --transition: 0.4s all ease;
+}
+
+.tps-accordion-two.style1 .accordion-item {
+  overflow: hidden;
+  background: transparent;
+}
+.tps-accordion-two.style1 .accordion-button {
+  position: relative;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  transition: all 0.3s linear 0s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  gap: 5px;
+}
+.tps-accordion-two.style1 .accordion-button::after, .tps-accordion-two.style1 .accordion-button::before {
+  display: none;
+}
+.tps-accordion-two.style1 .accordion-button-heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s linear 0s;
+}
+.tps-accordion-two.style1 .accordion-button-title {
+  color: #202020;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  transition: all 0.3s linear 0s;
+}
+.tps-accordion-two.style1 .accordion-button-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+.tps-accordion-two.style1 .accordion-button-icon {
+  order: initial;
+}
+.tps-accordion-two.style1 .accordion-button-icon span {
+  transition: all 0.3s linear 0s;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #222;
+}
+.tps-accordion-two.style1 .accordion-button-icon span.accordion-icon {
+  transition: all 0.3s linear 0s;
+}
+.tps-accordion-two.style1 .accordion-button-icon span.accordion-icon-active {
+  color: #8AF135;
+  border-color: #8AF135;
+  display: none;
+  transition: all 0.3s linear 0s;
+}
+.tps-accordion-two.style1 .accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+.tps-accordion-two.style1 .accordion-button:not(.collapsed) .accordion-button-icon span.accordion-icon {
+  display: none;
+}
+.tps-accordion-two.style1 .accordion-button:not(.collapsed) .accordion-button-icon span.accordion-icon-active {
+  display: flex;
+}
+.tps-accordion-two.style1 .accordion-body {
+  background-color: #fff;
+  color: rgba(32, 32, 32, 0.7);
+  transition: all 0.3s linear 0s;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tp-icon-position-start .tps-accordion-two.style1 .accordion-button .accordion-button-icon {
+  order: -1;
+}
+
+.tp-icon-position-end .tps-accordion-two.style1 .accordion-button .accordion-button-icon {
+  order: initial;
+}
+
+.tp-item-position-start .tps-accordion-two.style1 .accordion-button {
+  justify-content: flex-start;
+}
+
+.tp-item-position-center .tps-accordion-two.style1 .accordion-button {
+  justify-content: center;
+}
+
+.tp-item-position-end .tps-accordion-two.style1 .accordion-button {
+  justify-content: flex-end;
+}
+
+.tp-item-position-stretch .tps-accordion-two.style1 .accordion-button {
+  justify-content: space-between;
+}
+
+.accordion_lcnp .tps-accordion-two.style1 .accordion-item:last-child {
+  padding-bottom: 0 !important;
+}
+
+.accordion_lcnb .tps-accordion-two.style1 .accordion-item:last-child {
+  border-bottom: 0 !important;
+}
+
+.accordion_fcnb .tps-accordion-two.style1 .accordion-item:not(:last-child) {
+  border-bottom: 0 !important;
+}
+
+.tp-icon-two-position-start .tps-accordion-two.style1 .accordion-button {
+  flex-direction: row;
+}
+
+.tp-icon-two-position-top .tps-accordion-two.style1 .accordion-button {
+  flex-direction: column;
+}
+
+.tp-item-two-position-start .tps-accordion-two.style1 .accordion-button {
+  align-items: flex-start;
+}
+
+.tp-item-two-position-center .tps-accordion-two.style1 .accordion-button {
+  align-items: center;
+}
+
+.tp-item-two-position-end .tps-accordion-two.style1 .accordion-button {
+  align-items: flex-end;
+}
+
+.tps-accordion-two .accordion-header::after {
+  display: none;
+}
+
+/*# sourceMappingURL=accordion-two.css.map */

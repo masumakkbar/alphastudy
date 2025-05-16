@@ -1,0 +1,33 @@
+@import '../../../scss/base';
+
+//Buisness hour css
+.rs-business-hour {
+    .rs-business-schedule {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+}
+
+
+.tp-hour-position-left .rs-business-hour .rs-business-schedule {
+    display: flex;
+    flex-direction: row;
+}
+.tp-hour-position-right .rs-business-hour .rs-business-schedule {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tp-hour-space-position-start .rs-business-hour .rs-business-schedule {
+    justify-content: flex-start;
+}
+.tp-hour-space-position-center .rs-business-hour .rs-business-schedule {
+    justify-content: center;
+}
+.tp-hour-space-position-end .rs-business-hour .rs-business-schedule {
+    justify-content: flex-end;
+}
+.tp-hour-space-position-stretch .rs-business-hour .rs-business-schedule {
+    justify-content: space-between;
+}

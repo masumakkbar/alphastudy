@@ -1,0 +1,44 @@
+:root {
+  --bodyFont: "Rubik", sans-serif;
+  --titleFont: "URW Imperial W01 Regular";
+  --tekoFont: "Teko", sans-serif;
+  --OpticianSansFont: "OpticianSans";
+  --clashDisplayFont: "ClashDisplay";
+  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
+  --clashDisplayLightFont: "ClashDisplay-Light";
+  --clashDisplayRegularFont: "ClashDisplay-Regular";
+  --clashDisplayMediumFont: "ClashDisplay-Medium";
+  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --primaryColor: #00C89A;
+  --secondaryColor: #B66A25;
+  --bodyColor: #515151;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #FFFFFF;
+  --softbgColor: #f6f6f6;
+  --transition: 0.4s all ease;
+}
+
+/** video css --------------------------
+--------------------------------------*/
+.tp-icon-btn i, .tp-icon-btn svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+.tp-icon-btn {
+  display: inline-flex;
+  line-height: 1;
+  text-align: center;
+  font-size: 20px;
+}
+.tp-icon-btn i::before {
+  margin: 0;
+}
+
+/*# sourceMappingURL=icon.css.map */

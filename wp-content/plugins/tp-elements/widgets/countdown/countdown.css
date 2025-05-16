@@ -1,0 +1,109 @@
+/*------------------------------
+  TP Timecounter
+  -----------------------------*/
+.tp-timecounter .time_circles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tp-timecounter .time_circles canvas {
+  opacity: 0;
+  visibility: hidden;
+}
+.tp-timecounter .time_circles div {
+  position: absolute;
+  padding-right: 0;
+  text-align: center;
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter .time_circles div span {
+  line-height: 1.2;
+  font-size: 55px;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter .time_circles div h4 {
+  margin: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.circle_border_on .time_circles canvas {
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.separator .time_circles > div:after {
+  content: ":";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.separator .time_circles > div:last-child:after {
+  display: none;
+}
+.tp-timecounter.background_style .time_circles > div {
+  padding: 20px 0 18px;
+}
+.tp-timecounter.background_style .time_circles > div span {
+  background: transparent;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.background_style .time_circles > div span,
+.tp-timecounter.background_style .time_circles > div h4 {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.background_style .time_circles > div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.number_border .time_circles > div span {
+  border: 4px solid #4a4a4a;
+  padding: 0 15px;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.number_border .time_circles > div h4 {
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.number_border .time_circles > div span,
+.tp-timecounter.number_border .time_circles > div h4 {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.tp-timecounter.circle_vartical_border .time_circles > div::after {
+  content: "|";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 1;
+  visibility: visible;
+  color: #ddd;
+}
+.tp-timecounter.circle_vartical_border .time_circles > div:last-child::after {
+  display: none;
+}
+
+/*# sourceMappingURL=countdown.css.map */

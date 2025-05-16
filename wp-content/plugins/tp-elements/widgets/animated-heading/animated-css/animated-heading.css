@@ -1,0 +1,52 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.banner-marketing {
+  max-width: 100%;
+  position: relative;
+}
+.banner-marketing .title {
+  display: flex;
+}
+.banner-marketing .title .animate-pre-text {
+  padding-right: 18px;
+}
+.banner-marketing .word {
+  position: absolute;
+  opacity: 0;
+  color: #FF6600;
+}
+.banner-marketing .letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.banner-marketing.stroke-yes .letter {
+  -webkit-text-stroke: 0.5px #f8f8f8;
+  color: transparent;
+}
+.banner-marketing .letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.banner-marketing .letter.behind {
+  transform: rotateX(-90deg);
+}
+.banner-marketing .letter.in {
+  transform: rotateX(0deg);
+}
+
+/*# sourceMappingURL=animated-heading.css.map */

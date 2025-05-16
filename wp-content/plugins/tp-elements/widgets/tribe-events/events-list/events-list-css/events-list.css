@@ -1,0 +1,156 @@
+:root {
+  --bodyFont: "Rubik", sans-serif;
+  --titleFont: "URW Imperial W01 Regular";
+  --tekoFont: "Teko", sans-serif;
+  --OpticianSansFont: "OpticianSans";
+  --clashDisplayFont: "ClashDisplay";
+  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
+  --clashDisplayLightFont: "ClashDisplay-Light";
+  --clashDisplayRegularFont: "ClashDisplay-Regular";
+  --clashDisplayMediumFont: "ClashDisplay-Medium";
+  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --clashDisplayBoldFont: "ClashDisplay-Bold";
+  --primaryColor: #00C89A;
+  --secondaryColor: #B66A25;
+  --bodyColor: #515151;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --titleColor: #1E1E1E;
+  --borderColor: #f2f2f2;
+  --inputbgColor: #FFFFFF;
+  --softbgColor: #f6f6f6;
+  --transition: 0.4s all ease;
+}
+
+.events-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  .events-meta {
+    justify-content: center;
+  }
+}
+.events-meta span {
+  display: inline-block;
+}
+.events-meta span i {
+  display: inline-block;
+  margin-right: 7px;
+}
+.events-meta a {
+  display: inline-block;
+}
+
+.events-btn {
+  display: inline-block;
+}
+
+@media (max-width: 575px) {
+  .themephi-addon-events-list {
+    padding-top: 30px !important;
+  }
+}
+
+.events-list-part {
+  display: flex;
+}
+@media (max-width: 575px) {
+  .events-list-part {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.events-list-part .event-date {
+  margin-right: 25px;
+  text-align: center;
+  min-width: 75px;
+}
+@media (max-width: 575px) {
+  .events-list-part .event-date {
+    margin-right: 0 !important;
+  }
+}
+.events-list-part .events-icon {
+  width: 200px;
+  margin-right: 25px;
+}
+@media (max-width: 880px) {
+  .events-list-part .events-icon {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.events-list-part .events-text {
+  flex: 1;
+  margin-right: 25px;
+}
+@media (max-width: 575px) {
+  .events-list-part .events-text {
+    width: 100%;
+    margin-right: 0;
+    flex: 0 0 100%;
+    padding: 30px 20px;
+  }
+}
+.events-list-part .events-btn-part {
+  width: max-content;
+}
+
+.tp-events-list-wrapper ul.page-numbers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.tp-events-list-wrapper ul.page-numbers li {
+  display: inline-block;
+}
+.tp-events-list-wrapper ul.page-numbers li span.current {
+  background: var(--primaryColor);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 1.3s;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid var(--primaryColor);
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+.tp-events-list-wrapper ul.page-numbers li span, .tp-events-list-wrapper ul.page-numbers li a {
+  line-height: 50px;
+  color: #243757;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 1.3s;
+  text-align: center;
+  background: transparent;
+  opacity: 1;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid var(--primaryColor);
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.tp-events-list-wrapper ul.page-numbers li a.next {
+  position: relative;
+}
+.tp-events-list-wrapper ul.page-numbers li a:hover {
+  background: var(--primaryColor);
+  color: #fff;
+}
+
+/*# sourceMappingURL=events-list.css.map */

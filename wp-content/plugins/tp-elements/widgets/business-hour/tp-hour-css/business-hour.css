@@ -1,0 +1,47 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.rs-business-hour .rs-business-schedule {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.tp-hour-position-left .rs-business-hour .rs-business-schedule {
+  display: flex;
+  flex-direction: row;
+}
+
+.tp-hour-position-right .rs-business-hour .rs-business-schedule {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tp-hour-space-position-start .rs-business-hour .rs-business-schedule {
+  justify-content: flex-start;
+}
+
+.tp-hour-space-position-center .rs-business-hour .rs-business-schedule {
+  justify-content: center;
+}
+
+.tp-hour-space-position-end .rs-business-hour .rs-business-schedule {
+  justify-content: flex-end;
+}
+
+.tp-hour-space-position-stretch .rs-business-hour .rs-business-schedule {
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=business-hour.css.map */

@@ -1,0 +1,40 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.address-item {
+  display: flex;
+}
+.address-item .address-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.address-item .address-icon i, .address-item .address-icon svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+.address-item .address-icon i::before {
+  margin: 0;
+}
+
+.tp-contact-direction-vertical .address-item {
+  flex-direction: column;
+}
+.tp-contact-direction-horizontal .address-item {
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=contact-box.css.map */

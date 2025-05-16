@@ -1,0 +1,60 @@
+@import '../../../scss/base';
+
+.tp-features-list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        .tp-features-icon {
+            display: inline-flex;
+            line-height: 1;
+            text-align: center;
+            i {
+                width: 1em;
+                height: 1em;
+                display: block;
+                &::before {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            svg {
+                display: block;
+            }
+        }
+        .tp-features-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            display: block;
+        }
+        .tp-features-description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            display: block;
+        }
+    }
+}
+
+.tp-feature_list-position-left  .tp-features-list li {
+    display: flex;
+    flex-direction: row;
+}
+.tp-feature_list-position-top  .tp-features-list li {
+    display: flex;
+    flex-direction: column;
+}
+.tp-feature_list-position-right  .tp-features-list li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.tp-feature_list-position-bottom  .tp-features-list li {
+    display: flex;
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,74 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.tp-blockquote blockquote {
+  display: flex;
+  z-index: 1;
+}
+.tp-blockquote blockquote::before, .tp-blockquote blockquote::after {
+  display: none;
+}
+.tp-blockquote blockquote cite {
+  min-width: max-content;
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+.tp-blockquote-icon {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+}
+.tp-blockquote-icon i {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+.tp-blockquote-icon i::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tp-blockquote-icon svg {
+  display: block;
+}
+
+.tp-blockquote-position-absolute blockquote::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #222;
+  border-radius: 0;
+}
+
+.tp-desc-before-default .tp-blockquote blockquote cite::before {
+  display: none;
+}
+
+.tp-desc-before-before .tp-blockquote blockquote cite::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #222;
+}
+
+/*# sourceMappingURL=blockquote.css.map */

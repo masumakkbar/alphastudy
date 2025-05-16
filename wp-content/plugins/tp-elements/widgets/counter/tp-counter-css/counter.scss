@@ -1,0 +1,44 @@
+@import '../../../scss/base';
+/** Counter up CSS ----------------------
+----------------------------------------*/
+
+.tp-horizontal-icon-position-top {
+    .tps-counter-list {
+        .tps-counter-list {
+            
+        }
+    }
+}
+.tp-horizontal-icon-position-start {
+    .tps-counter-list {
+        display: flex;
+        flex-direction: row;
+        .tp-count-text {
+            flex-grow: 1;
+        }
+    }
+}
+.tp-horizontal-icon-position-end {
+    .tps-counter-list {
+        display: flex;
+        flex-direction: row-reverse;
+        .tp-count-text {
+            flex-grow: 1;
+        }
+    }
+}
+.tp-vertical-icon-position-top {
+    .tps-counter-list {
+        align-items: start;
+    }
+}
+.tp-vertical-icon-position-middle {
+    .tps-counter-list {
+        align-items: center;
+    }
+}
+.tp-vertical-icon-position-bottom {
+    .tps-counter-list {
+        align-items: end;
+    }
+}

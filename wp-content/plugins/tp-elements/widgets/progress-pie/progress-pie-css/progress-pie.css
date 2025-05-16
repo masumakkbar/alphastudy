@@ -1,0 +1,41 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+/*------------------------------
+  Pie progress bar
+  -----------------------------*/
+.tp-pie-content {
+  text-align: center;
+}
+.tp-pie-content .tppie-title-center {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.tp-pie-content .tppie-value {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tp-pie-content .number {
+  text-align: center;
+  display: block;
+  padding: 10px 0 0;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=progress-pie.css.map */

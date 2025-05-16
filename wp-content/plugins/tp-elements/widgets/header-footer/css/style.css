@@ -1,0 +1,39 @@
+:root {
+  --bodyFont: "Onest", sans-serif;
+  --titleFont: "Onest", sans-serif;
+  --primaryColor: #01A66B;
+  --secondaryColor: #005651;
+  --bodyColor: #4B655C;
+  --whiteColor: #ffffff;
+  --titleColor: #1C1E30;
+  --borderColor: #CDE4DC;
+  --inputbgColor: #E6F7F1;
+  --shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);
+  --transition: 0.4s all ease;
+}
+
+.hfe-search-form__container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hfe-search-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.tp-input-box-flex .hfe-search-form__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tp-input-box-block .hfe-search-form__container {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
