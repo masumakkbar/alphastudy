@@ -20,7 +20,7 @@ wp-content/plugins/*
 !wp-content/plugins/tp-elements/
 !wp-content/plugins/tp-framework/
 # !wp-content/plugins/elementor-pro/
-# !wp-content/plugins/tutor-pro/
+!wp-content/plugins/tutor-pro/
 # !wp-content/plugins/tutor-lms-elementor-addons/
 
 !wp-content/themes/
