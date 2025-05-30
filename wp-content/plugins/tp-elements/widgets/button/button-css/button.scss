@@ -12,7 +12,7 @@
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        background-color: #222;
+        background-color: var(--primaryColor);
         border-radius: 2px;
         position: relative;
         transition: all 0.3s linear;
@@ -30,14 +30,6 @@
             position: relative;
             z-index: 1;
         }
-    }
-    &.secondary_btn{
-       a{
-            background: var(--titleColor);
-            &:after{
-              background: var(--primaryColor);
-            }
-       }     
     }  
 }
 
@@ -534,4 +526,39 @@
 html *, html ::before, html ::after {
 	box-sizing: border-box;
 	transition: 0.5s ease-in-out;
+}
+
+
+/* Tutor Button */
+
+
+.themephi-button.tutor_btn {
+  position: relative;
+  z-index: 9;
+}
+.themephi-button-tutor-dropdown a {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: start;
+  background-color: transparent;
+  padding: 5px 15px;
+}
+.themephi-button-tutor-dropdown {
+  background-color: var(--primaryColor);
+  padding: 5px 0px;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s linear 0s;
+  z-index: 3;
+  min-width: 100%;
+}
+.themephi-button.tutor_btn:hover .themephi-button-tutor-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }

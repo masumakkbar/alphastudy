@@ -1,25 +1,15 @@
 :root {
-  --bodyFont: "Rubik", sans-serif;
-  --titleFont: "URW Imperial W01 Regular";
-  --tekoFont: "Teko", sans-serif;
-  --OpticianSansFont: "OpticianSans";
-  --clashDisplayFont: "ClashDisplay";
-  --clashDisplayExtralightFont: "ClashDisplay-Extralight";
-  --clashDisplayLightFont: "ClashDisplay-Light";
-  --clashDisplayRegularFont: "ClashDisplay-Regular";
-  --clashDisplayMediumFont: "ClashDisplay-Medium";
-  --clashDisplaySemiboldFont: "ClashDisplay-Semibold";
-  --clashDisplayBoldFont: "ClashDisplay-Bold";
-  --clashDisplayBoldFont: "ClashDisplay-Bold";
-  --primaryColor: #00C89A;
-  --secondaryColor: #B66A25;
-  --bodyColor: #515151;
+  --bodyFont: "Roboto", sans-serif;
+  --titleFont: "Roboto", sans-serif;
+  --primaryColor: #1268EB;
+  --secondaryColor: #0D56C4;
+  --bodyColor: #777777;
   --whiteColor: #FFFFFF;
   --blackColor: #000000;
   --titleColor: #1E1E1E;
   --borderColor: #f2f2f2;
-  --inputbgColor: #FFFFFF;
-  --softbgColor: #f6f6f6;
+  --inputbgColor: #F5F5F5;
+  --softbgColor: #F5F5F5;
   --transition: 0.4s all ease;
 }
 
@@ -35,7 +25,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background-color: #222;
+  background-color: var(--primaryColor);
   border-radius: 2px;
   position: relative;
   transition: all 0.3s linear;
@@ -53,12 +43,6 @@
   transition: all 0.3s linear;
   position: relative;
   z-index: 1;
-}
-.themephi-button.secondary_btn a {
-  background: var(--titleColor);
-}
-.themephi-button.secondary_btn a:after {
-  background: var(--primaryColor);
 }
 
 .tp-button-style1 .themephi-button a::before {
@@ -474,6 +458,41 @@
 html *, html ::before, html ::after {
   box-sizing: border-box;
   transition: 0.5s ease-in-out;
+}
+
+/* Tutor Button */
+.themephi-button.tutor_btn {
+  position: relative;
+  z-index: 9;
+}
+
+.themephi-button-tutor-dropdown a {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: start;
+  background-color: transparent;
+  padding: 5px 15px;
+}
+
+.themephi-button-tutor-dropdown {
+  background-color: var(--primaryColor);
+  padding: 5px 0px;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s linear 0s;
+  z-index: 3;
+  min-width: 100%;
+}
+
+.themephi-button.tutor_btn:hover .themephi-button-tutor-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 
 /*# sourceMappingURL=button.css.map */
